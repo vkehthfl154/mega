@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+/*여백초기화*/
+body,
+div,
+ul,
+li,
+dl,
+dd,
+dt,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+fieldset,
+legend,
+p,
+select,
+table,
+th,
+thd,
+tr,
+textarea,
+button,
+form,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+/*a링크 초기화*/
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2698cb;
+}
+
+/*폰트초기화*/
+body,
+input,
+textarea,
+select,
+button,
+table {
+  font-family: "Noto Sans KR", "Magun Gothic", "맑은 고딕", dotum, "돋움",
+    sans-serif;
+  color: #222;
+  font-size: 13px;
+  line-height: 1.5;
+  /*//폰트사이즈 기준1.6 13*1.6=약 20*/
+}
+
+/*폰트 스타일 초기화*/
+em,
+address {
+  font-style: normal;
+}
+
+/*블릿기호 초기화*/
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+/*제목테그 초기화*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+/*버튼초기화*/
+button {
+  border: 0;
+}
+
+/*반응형*/
+img {
+  width: 100%;
+}
+
+/*clearfix*/
+.clearfix:before,
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+/*IR효과*/
+.ir, .ir_su, .ir_pm, .ir_wa{
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+/*margin*/
+.mt10 {
+  margin-top: 10px !important;
+}
+.mt15 {
+  margin-top: 15px !important;
+}
+.mt20 {
+  margin-top: 20px !important;
+}
+.mt25 {
+  margin-top: 25px !important;
+}
+.mt30 {
+  margin-top: 30px !important;
+}
+.mt35 {
+  margin-top: 35px !important;
+}
+.mt40 {
+  margin-top: 40px !important;
+}
+.mt45 {
+  margin-top: 45px !important;
+}
+.mt50 {
+  margin-top: 50px !important;
+}
+
+.icon{
+    background-image: url(../img/icon.png);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+    only screen and (min-device-pixel-ratio:1.5),
+		only screen and (min-resoultion:1.5dppx){
+        .icon{
+					background-image: url(../img/icon@2.png);
+					background-size: 500px;
+        }
+      }
+
+.ui_select2{
+    width: 100%; color: #fff;
+    background: #2c2f34 url(../img/down.svg)no-repeat right 20px center;
+		background-size: 12px;
+		border: 0 none; appearance: none;
+		height: 36px; padding: 0 10px; box-sizing: border-box;
+}
+.ui_input3{
+	border: none; width: 100%; height: 36px;
+	padding: 0 10px; box-sizing: border-box; color: #ccc;
+	outline: none;
+}
+
+
+
+/* SB(Story Board) : 사이트 제작에 필요한 정보(정책, 프로세스, 기능정의, 콘텐츠 구성)가 담겨있는 화면설계서
+기획자들이 작성하는 문서 중 하나
+기능 및 화면 이동에 대한 설계
+
+need : 고객의 요구사항
+
+CMS(Content Management System):전문지식은 없지만, 사이트를 운영할 수 있는 툴(카페24, 고도몰...)
+
+PG(Payment Gateway):소액결제 시스템
+인터넷의 금융기관 거래 대행 서비스, ARS결제, 휴대폰 결제, 신용카드, 계좌이체(무통장)등 고객결제 대행서비스 
+
+PM(Project Manager):프로젝트의 모든 관리업무를 책임지는 사람
+참여인원을 모두 감독 관리, 스케줄까지 관리하는 총괄책임자
+
+PL(Project Leader):파트 책임자, 타 파트 협동 등을 리더하는 사람
+
+과업지시서 : 고객의 제작, 발주업체가 입찰업체에게 주는 웹서비스 제작 요구 청구서(어떤 사이트처럼 만들어달라, 필요한 기능을 요구, 예산에 맞게 완성) - 고객의 요구사항
+
+제안요청서 : 발주자가 특정 과제 수행에 필요한 요구사항을 체계적으로 정리하여 제시하는 서류
+
+TFT : 프로젝트를 위한 임시 팀
+
+고도화 : 기존 사이트의 시스템 자체(Back단)를 업그레이드
+
+리뉴얼 : 기존 서비스를 업데이트
+
+구축 : 신규 웹서비스 제작
+
+as-is : 개선 전 / to-be : 개선 후  */
